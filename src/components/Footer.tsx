@@ -7,12 +7,16 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {/* Company Info */}
           <div>
-            <div className="mb-6">
+            <div className="mb-6 flex items-center space-x-4">
               <img 
                 src="/lovable-uploads/039fa20f-a5d3-4af2-8cf9-fa52a81183ba.png" 
                 alt="Ultimate Trucking Solutions" 
                 className="h-20 w-20 rounded-full object-cover hover:scale-110 transition-transform duration-500 shadow-lg border-3 border-white/30 animate-pulse hover:animate-none"
               />
+              <div>
+                <h3 className="text-2xl font-poppins font-bold text-white">Ultimate Trucking Solutions</h3>
+                <p className="text-secondary font-open-sans text-sm">Powering Africa's Roads</p>
+              </div>
             </div>
             <p className="font-open-sans text-white/80 mb-4 leading-relaxed">
               Powering Africa's roads with expert truck repairs, 24/7 roadside support, 
