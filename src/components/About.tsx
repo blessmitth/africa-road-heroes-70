@@ -1,9 +1,12 @@
 import { Shield, MapPin, Clock, CheckCircle, Users, Wrench, Zap, Target, Heart } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
+import { useNavigate } from "react-router-dom";
 import aboutHeroImage from "@/assets/about-hero-team.jpg";
 
 const About = () => {
+  const navigate = useNavigate();
+
   const coreValues = [
     {
       icon: <Shield className="w-8 h-8" />,
@@ -65,10 +68,20 @@ const About = () => {
               Your go-to truck and plant service partner in Botswana & the SADC region.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button variant="cta" size="lg" className="font-poppins text-lg">
+              <Button 
+                variant="cta" 
+                size="lg" 
+                className="font-poppins text-lg"
+                onClick={() => window.open('https://wa.me/0026771669889?text=Hello%2C%20I%20would%20like%20to%20meet%20your%20team%20and%20learn%20more%20about%20your%20services')}
+              >
                 Meet Our Team
               </Button>
-              <Button variant="outline" size="lg" className="font-poppins text-lg border-white text-blue-500 hover:bg-blue-500 hover:text-white">
+              <Button 
+                variant="outline" 
+                size="lg" 
+                className="font-poppins text-lg border-white text-blue-500 hover:bg-blue-500 hover:text-white"
+                onClick={() => navigate('/services')}
+              >
                 Explore Our Services
               </Button>
             </div>
@@ -381,10 +394,20 @@ const About = () => {
               Let's talk. We're ready to support your business, 24/7.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button variant="cta" size="lg" className="font-poppins text-lg">
+              <Button 
+                variant="cta" 
+                size="lg" 
+                className="font-poppins text-lg"
+                onClick={() => window.open('https://wa.me/0026771669889?text=Hello%2C%20I%20would%20like%20to%20contact%20you%20regarding%20your%20truck%20repair%20services')}
+              >
                 Contact Us Today
               </Button>
-              <Button variant="outline" size="lg" className="font-poppins text-lg">
+              <Button 
+                variant="outline" 
+                size="lg" 
+                className="font-poppins text-lg"
+                onClick={() => window.open('https://wa.me/0026771669889?text=Hello%2C%20I%20would%20like%20to%20get%20a%20quote%20for%20your%20services')}
+              >
                 Get a Quote
               </Button>
             </div>
