@@ -8,7 +8,7 @@ const AboutPage = () => {
   return (
     <div className="min-h-screen bg-background">
       <Header />
-      <div className="pt-16">
+      <div className="pt-28">
         <About />
         <WhyChooseUs />
       </div>
