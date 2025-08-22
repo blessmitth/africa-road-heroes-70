@@ -3,9 +3,9 @@ import { Phone } from "lucide-react";
 
 const EmergencyCTA = () => {
   return (
-    <div className="fixed bottom-0 left-0 right-0 z-50 bg-gradient-cta text-white shadow-2xl border-t-4 border-white/20">
-      <div className="container mx-auto px-4 py-4">
-        <div className="flex flex-col sm:flex-row items-center justify-between gap-4">
+    <div className="fixed bottom-0 left-0 right-0 z-50 bg-gradient-cta text-white shadow-2xl border-t-2 border-white/20">
+      <div className="container mx-auto px-4 py-2">
+        <div className="flex flex-col sm:flex-row items-center justify-between gap-2">
           <div className="text-center sm:text-left">
             <h3 className="font-montserrat font-bold text-lg mb-1">
               🛠️ Need Roadside Help or Emergency Repairs?
