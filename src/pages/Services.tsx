@@ -27,7 +27,7 @@ const ServicesPage = () => {
     <div className="min-h-screen bg-background">
       <Header />
       {/* Expert Fleet Solutions Banner with Truck Service Images */}
-      <section className="relative h-96 overflow-hidden">
+      <section className="relative h-[70vh] overflow-hidden">
         {/* Background Image with Transition */}
         <div 
           className="absolute inset-0 bg-cover bg-center bg-no-repeat transition-all duration-1000 ease-in-out"
