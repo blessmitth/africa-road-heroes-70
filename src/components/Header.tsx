@@ -8,7 +8,7 @@ const Header = () => {
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-sm border-b border-border shadow-md">
       <div className="container mx-auto px-4">
-        <div className="flex items-center justify-center h-20 relative">
+        <div className="flex items-center justify-center h-28 relative">
           {/* Centered Navigation with Logo */}
           <nav className="hidden md:flex items-center space-x-4">
             <a href="/" className="font-poppins font-bold text-foreground hover:text-primary transition-colors">
@@ -64,7 +64,7 @@ const Header = () => {
 
         {/* Mobile Navigation */}
         {isMenuOpen && (
-          <div className="md:hidden absolute top-20 left-0 right-0 bg-white border-b border-border shadow-lg">
+          <div className="md:hidden absolute top-28 left-0 right-0 bg-white border-b border-border shadow-lg">
             <nav className="flex flex-col space-y-4 p-4">
               <a href="/" className="font-poppins text-foreground hover:text-primary transition-colors">
                 Home
