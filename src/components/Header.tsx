@@ -45,7 +45,7 @@ const Header = () => {
             <div className="flex items-center space-x-2">
               <Button 
                 variant="cta" 
-                size="sm" 
+                size="lg" 
                 className="font-poppins"
                 onClick={() => window.open('tel:+0026771669889')}
               >

@@ -333,7 +333,7 @@ const About = () => {
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center text-white">
             <blockquote className="text-2xl md:text-3xl font-poppins italic leading-relaxed mb-8">
-              "Ultimate Trucking Solutions has kept our fleet running smoothly for over 3 years. They are more than a repair service, they are partners."
+              Ultimate Trucking Solutions has kept our fleet running smoothly for over 3 years. They are more than a repair service, they are partners.
             </blockquote>
             <cite className="text-lg font-open-sans text-white/90">
               - Tebogo M., Fleet Supervisor, Francistown

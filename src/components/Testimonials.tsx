@@ -56,7 +56,7 @@ const Testimonials = () => {
                 </div>
                 
                 <p className="font-roboto italic text-lg text-foreground/80 mb-6 leading-relaxed">
-                  "{testimonial.text}"
+                  {testimonial.text}
                 </p>
                 
                 <div className="border-t border-border pt-4">
