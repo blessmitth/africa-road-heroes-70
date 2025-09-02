@@ -1,6 +1,10 @@
 import { Card, CardContent } from "@/components/ui/card";
+import LazyImage from "@/components/LazyImage";
+import { useState } from "react";
 
 const Gallery = () => {
+  const [loadedImages, setLoadedImages] = useState(0);
+  
   const projects = [
     {
       title: "Precision Bearing Assembly",
@@ -154,10 +158,11 @@ const Gallery = () => {
               }}
             >
               <div className="relative overflow-hidden bg-background/50 rounded-t-lg">
-                <img 
+                <LazyImage
                   src={project.image}
                   alt={project.title}
-                  className="w-full aspect-[4/3] object-contain bg-background group-hover:scale-105 transition-transform duration-1000"
+                  className="w-full aspect-[4/3] bg-background group-hover:scale-105 transition-transform duration-1000"
+                  onLoad={() => setLoadedImages(prev => prev + 1)}
                 />
                 <div className="absolute top-4 left-4">
                   <span className="bg-secondary text-white px-3 py-1 rounded-full text-sm font-poppins font-medium opacity-0 group-hover:opacity-100 transition-opacity duration-500">

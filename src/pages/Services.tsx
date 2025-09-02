@@ -2,6 +2,7 @@ import Header from "@/components/Header";
 import Services from "@/components/Services";
 import Footer from "@/components/Footer";
 import EmergencyCTA from "@/components/EmergencyCTA";
+import SEOHead from "@/components/SEOHead";
 import { useState, useEffect } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 
@@ -25,6 +26,11 @@ const ServicesPage = () => {
 
   return (
     <div className="min-h-screen bg-background">
+      <SEOHead 
+        title="Expert Fleet Solutions - Professional Truck Repair Services | Ultimate Trucking Solutions"
+        description="Comprehensive truck repair, fleet maintenance, and mobile service solutions. Professional mechanics across Botswana and SADC region with 24/7 emergency support."
+        keywords="fleet solutions, truck repair services, professional mechanics, mobile truck repair, fleet maintenance Botswana, commercial vehicle service"
+      />
       <Header />
       {/* Expert Fleet Solutions Banner with Truck Service Images */}
       <section className="relative h-[70vh] overflow-hidden pt-28">
